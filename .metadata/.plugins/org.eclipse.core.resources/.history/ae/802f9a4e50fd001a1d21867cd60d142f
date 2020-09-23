@@ -1,0 +1,5 @@
+package com.liupengjin.service;
+
+public class RestTemplateService {
+
+}

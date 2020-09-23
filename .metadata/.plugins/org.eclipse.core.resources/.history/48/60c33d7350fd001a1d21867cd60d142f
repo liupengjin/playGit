@@ -1,0 +1,5 @@
+package com.liupengjin.controller;
+
+public class RestTemplateController {
+
+}

@@ -1,0 +1,11 @@
+package com.liupengjin.Hystric;
+
+import com.liupengjin.interfac.ServiceHiFeign;
+
+public class FeignHystrix implements ServiceHiFeign{
+
+	@Override
+	public String getData(String name) {
+		return "sorry " + name;
+	}
+}

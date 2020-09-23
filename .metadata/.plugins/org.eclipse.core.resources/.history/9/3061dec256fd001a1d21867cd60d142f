@@ -1,0 +1,5 @@
+package com.liupengjin.interfac;
+
+public interface ServiceHiFeign {
+
+}

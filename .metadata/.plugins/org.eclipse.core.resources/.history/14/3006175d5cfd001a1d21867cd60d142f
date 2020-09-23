@@ -1,0 +1,5 @@
+package com.liupengjin.Hystric;
+
+public class FeignHystrix {
+
+}

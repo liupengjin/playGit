@@ -1,0 +1,316 @@
+!SESSION 2020-09-23 11:12:06.986 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-09-23 11:13:16.197
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 5 2020-09-23 11:13:19.689
+!MESSAGE The configuration download failed. Version: 1.0.1.v20150913-0716
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Json.deserialize(Json.java:67)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:75)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 29 2020-09-23 11:13:19.712
+!MESSAGE Startup failed, AERI is disabled until next restart. Version: 1.0.1.v20150913-0716
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ui.utils.Json.deserialize(Json.java:67)
+	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:75)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup.access$4(Startup.java:201)
+	at org.eclipse.epp.internal.logging.aeri.ide.Startup$1.run(Startup.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY org.tigris.subversion.clientadapter.javahl 1 0 2020-09-23 11:14:20.172
+!MESSAGE Failed to load JavaHL Library.
+These are the errors that were encountered:
+C:\Program Files (x86)\VisualSVN Server\bin\libapr-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+no libapriconv-1 in java.library.path
+C:\Program Files (x86)\VisualSVN Server\bin\libeay32.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+C:\Program Files (x86)\VisualSVN Server\bin\ssleay32.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+C:\Program Files (x86)\VisualSVN Server\bin\libaprutil-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+no libsasl in java.library.path
+C:\Program Files (x86)\VisualSVN Server\bin\libsvn_subr-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+C:\Program Files (x86)\VisualSVN Server\bin\libsvn_delta-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+C:\Program Files (x86)\VisualSVN Server\bin\libsvn_diff-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+C:\Program Files (x86)\VisualSVN Server\bin\libsvn_wc-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+C:\Program Files (x86)\VisualSVN Server\bin\libsvn_fs-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+C:\Program Files (x86)\VisualSVN Server\bin\libsvn_repos-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+C:\Program Files (x86)\VisualSVN Server\bin\libsvn_ra-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+C:\Program Files (x86)\VisualSVN Server\bin\libsvn_client-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+no libsvnjavahl-1 in java.library.path
+no svnjavahl-1 in java.library.path
+no svnjavahl in java.library.path
+java.library.path = D:\java-tools\eclipse_64\eclipse-jee-mars-1-win32-x86_64\eclipse;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/java-tools/jdk1.8/jdk/bin/../jre/bin/server;D:/java-tools/jdk1.8/jdk/bin/../jre/bin;D:/java-tools/jdk1.8/jdk/bin/../jre/lib/amd64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\java-tools\mysql\mysql5.5.59\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\mysql_Tool\bin;D:\java-tools\jdk1.8\jdk\bin;D:\java-tools\maven\apache-maven-3.6.1\bin;C:\Program Files (x86)\VisualSVN Server\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\nodejs\;D:\web-tools\VSCodeSetup-x64-1.29.1\Microsoft VS Code\bin;D:\java-tools\Git\git_install\Git\cmd;C:\Users\Administrator\AppData\Roaming\npm;D:\java-tools\eclipse_64\eclipse-jee-mars-1-win32-x86_64\eclipse;;.
+
+!ENTRY org.eclipse.jface 2 0 2020-09-23 11:14:21.736
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:760)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.add(AbstractTreeViewer.java:147)
+	at org.eclipse.ui.navigator.CommonViewer.add(CommonViewer.java:301)
+	at org.eclipse.ui.internal.navigator.resources.workbench.ResourceExtensionContentProvider$2.run(ResourceExtensionContentProvider.java:254)
+	at org.eclipse.ui.internal.navigator.resources.workbench.ResourceExtensionContentProvider.runUpdates(ResourceExtensionContentProvider.java:293)
+	at org.eclipse.ui.internal.navigator.resources.workbench.ResourceExtensionContentProvider.access$1(ResourceExtensionContentProvider.java:291)
+	at org.eclipse.ui.internal.navigator.resources.workbench.ResourceExtensionContentProvider$1.run(ResourceExtensionContentProvider.java:115)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.tigris.subversion.subclipse.ui.LoadErrorHandler$1.run(LoadErrorHandler.java:26)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:162)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:128)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:114)
+	at org.eclipse.core.internal.jobs.OrderedLock.doAcquire(OrderedLock.java:152)
+	at org.eclipse.core.internal.jobs.OrderedLock.acquire(OrderedLock.java:106)
+	at org.eclipse.jst.j2ee.internal.J2EEInit.aquireInitializePackageContentsLock(J2EEInit.java:454)
+	at org.eclipse.jst.j2ee.ejb.internal.impl.EjbPackageImpl.freeze(EjbPackageImpl.java:1757)
+	at org.eclipse.jst.j2ee.ejb.internal.impl.EjbPackageImpl.init(EjbPackageImpl.java:325)
+	at org.eclipse.jst.j2ee.ejb.EjbPackage.<clinit>(EjbPackage.java:1916)
+	at org.eclipse.jst.j2ee.ejb.internal.impl.EjbFactoryImpl.getPackage(EjbFactoryImpl.java:671)
+	at org.eclipse.jst.j2ee.internal.provider.J2EEAdapterFactoryLabelProvider.<clinit>(J2EEAdapterFactoryLabelProvider.java:42)
+	at org.eclipse.jst.j2ee.navigator.internal.J2EELabelProvider.initialize(J2EELabelProvider.java:57)
+	at org.eclipse.jst.j2ee.navigator.internal.J2EELabelProvider.init(J2EELabelProvider.java:246)
+	at org.eclipse.ui.internal.navigator.extensions.NavigatorContentExtension$2.run(NavigatorContentExtension.java:156)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.navigator.extensions.NavigatorContentExtension.getLabelProvider(NavigatorContentExtension.java:148)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceLabelProvider.findStyledText(NavigatorContentServiceLabelProvider.java:165)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceLabelProvider.getStyledText(NavigatorContentServiceLabelProvider.java:153)
+	at org.eclipse.ui.internal.navigator.NavigatorDecoratingLabelProvider$StyledLabelProviderAdapter.getStyledText(NavigatorDecoratingLabelProvider.java:63)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.getStyledText(DelegatingStyledCellLabelProvider.java:206)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.getStyledText(DecoratingStyledCellLabelProvider.java:199)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:106)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:949)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:114)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1029)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:473)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2176)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:843)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createAddedElements(AbstractTreeViewer.java:347)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalAdd(AbstractTreeViewer.java:281)
+	at org.eclipse.jface.viewers.TreeViewer.internalAdd(TreeViewer.java:630)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.add(AbstractTreeViewer.java:156)
+	at org.eclipse.ui.navigator.CommonViewer.add(CommonViewer.java:301)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.add(AbstractTreeViewer.java:664)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider$4.run(PackageExplorerContentProvider.java:977)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.runUpdates(PackageExplorerContentProvider.java:195)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.runPendingUpdates(PackageExplorerContentProvider.java:187)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider$1.runInUIThread(PackageExplorerContentProvider.java:165)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.jface 4 2 2020-09-23 11:14:23.423
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jface.viewers.ViewerCell.getStyleRanges(ViewerCell.java:195)
+	at org.eclipse.jface.viewers.DelegatingStyledCellLabelProvider.update(DelegatingStyledCellLabelProvider.java:109)
+	at org.eclipse.jface.viewers.DecoratingStyledCellLabelProvider.update(DecoratingStyledCellLabelProvider.java:136)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:949)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:114)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1029)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:473)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2176)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:843)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createAddedElements(AbstractTreeViewer.java:347)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalAdd(AbstractTreeViewer.java:281)
+	at org.eclipse.jface.viewers.TreeViewer.internalAdd(TreeViewer.java:630)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.add(AbstractTreeViewer.java:156)
+	at org.eclipse.ui.navigator.CommonViewer.add(CommonViewer.java:301)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.add(AbstractTreeViewer.java:664)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider$4.run(PackageExplorerContentProvider.java:977)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.runUpdates(PackageExplorerContentProvider.java:195)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.runPendingUpdates(PackageExplorerContentProvider.java:187)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider$1.runInUIThread(PackageExplorerContentProvider.java:165)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 11:14:28.374
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 11:14:28.389
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 11:15:21.077
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 11:15:21.087
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 11:25:11.312
+!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
+!STACK 0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/mars/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294)
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:192)
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:174)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:167)
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/mars/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:39)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
+	... 8 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-23 11:25:11.313
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 11:28:02.335
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 11:28:02.337
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 11:34:12.740
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 11:34:12.743
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 12:31:34.779
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 12:31:34.782
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.recommenders.rcp 2 15 2020-09-23 13:25:30.113
+!MESSAGE Failed to parse news feed
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 116; 引用了实体 "raquo", 但未声明它。
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:291)
+	at org.eclipse.recommenders.internal.rcp.news.RssParser.getEntries(RssParser.java:53)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.getNewsItems(CheckForProjectNewsJob.java:97)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.doRun(CheckForProjectNewsJob.java:89)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.run(CheckForProjectNewsJob.java:62)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+--------------- linked to ------------------
+javax.xml.xpath.XPathExpressionException: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 116; 引用了实体 "raquo", 但未声明它。
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:294)
+	at org.eclipse.recommenders.internal.rcp.news.RssParser.getEntries(RssParser.java:53)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.getNewsItems(CheckForProjectNewsJob.java:97)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.doRun(CheckForProjectNewsJob.java:89)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.run(CheckForProjectNewsJob.java:62)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 116; 引用了实体 "raquo", 但未声明它。
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:257)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(XPathExpressionImpl.java:291)
+	... 5 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 13:30:40.465
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 13:30:40.467
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 14:15:31.356
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-09-23 14:15:31.425
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
